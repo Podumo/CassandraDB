@@ -1,4 +1,4 @@
-package com.example.cassandra;
+package com.datastax.cassandra;
 
 /**
  * Created by kmofokeng on 18/08/2015.
