@@ -18,7 +18,7 @@ class CassandraConnector {
     public void connect() {
         try {
             cluster = Cluster.builder()
-                    .addContactPoint("bvbdev1dat1cas.deloittecloud.co.za")
+                    .addContactPoint("cassandra.host.com")
                     .build();
             Metadata metadata = cluster.getMetadata();
             System.out.printf("Connected to cluster: %s\n",
