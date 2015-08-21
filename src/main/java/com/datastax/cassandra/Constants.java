@@ -6,7 +6,7 @@ import java.util.UUID;
  * Created by kmofokeng on 21/08/2015.
  */
 class Constants {
-    public static String ADDRESS = "bvbdev1dat1cas.deloittecloud.co.za";
+    public static String ADDRESS = "cassandra.host.com";
     public static String KEYSPACE = "CREATE KEYSPACE IF NOT EXISTS simplex WITH replication = {'class':'SimpleStrategy', 'replication_factor':3};";
     public static String SONGS = "CREATE TABLE IF NOT EXISTS simplex.songs (" +
             "id uuid PRIMARY KEY," +
