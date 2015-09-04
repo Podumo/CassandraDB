@@ -15,7 +15,7 @@ class CassandraConnector {
 
     public Cluster connect(String address) {
         try {
-            cluster = Cluster.builder().addContactPoint(address).build();
+            cluster = Cluster.builder().addContactPoint(address).withCredentials("admin", "hR5#squ3E5").build();
             session = cluster.connect();
         }
         catch (NoHostAvailableException e) {
