@@ -3,7 +3,7 @@ package com.datastax.cassandra;
 //import com.datastax.driver.core.Cluster;
 
 import junit.framework.TestCase;
-//import org.junit.Test;
+import org.junit.Test;
 
 //import static com.datastax.cassandra.Constants.*;
 
@@ -11,6 +11,10 @@ import junit.framework.TestCase;
  * Created by kmofokeng on 19/08/2015.
  */
 public class CassandraConnectorTest extends TestCase {
+    @Test
+    public void testGeneric(){
+        
+    }
     /*private Cluster cluster;
 
     private CassandraConnector connector = new CassandraConnector();
