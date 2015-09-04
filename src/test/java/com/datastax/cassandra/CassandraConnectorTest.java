@@ -33,13 +33,13 @@ public class CassandraConnectorTest extends TestCase {
         connector.close();
     }
 
-    @Test
+    /*@Test
     public void testDeleteSchema() {
         cluster = connector.connect(ADDRESS);
         connector.createSchema(KEYSPACE);
         assertTrue(connector.createSchema(DROPSCHEMA).getExecutionInfo().isSchemaInAgreement());
         connector.close();
-    }
+    }*/
 
     @Test
     public void testCloseConnection() {
