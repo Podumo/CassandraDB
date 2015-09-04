@@ -22,7 +22,7 @@ public class CassandraConnectorTest extends TestCase {
         connector.close();
     }
 
-    /*@Test
+    @Test
     public void testQuerySchema() {
         cluster = connector.connect(ADDRESS);
         connector.createSchema(KEYSPACE);
@@ -31,7 +31,7 @@ public class CassandraConnectorTest extends TestCase {
         connector.loadData(INSERT);
         assertTrue(!connector.querySchema(SELECT).toString().isEmpty());
         connector.close();
-    }*/
+    }
 
     @Test
     public void testDeleteSchema() {
