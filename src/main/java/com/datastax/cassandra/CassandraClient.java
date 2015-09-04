@@ -38,5 +38,6 @@ public class CassandraClient {
                     row.getString("album"),  row.getString("artist")));
         }
         System.out.println();
+        System.out.println();
     }
 }
