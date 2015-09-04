@@ -8,14 +8,15 @@ install: mvn install -Dmaven.compiler.target=1.7 -Dmaven.compiler.source=1.7 -Ds
 # script: mvn test -Dmaven.compiler.target=1.7 -Dmaven.compiler.source=1.7 
 
 notifications:
-  email:
-    recipients:
-      - kmofokeng@deloitte.co.za
-      - dbotha@deloitte.co.za
-      - harbotha@deloitte.co.za
-    on_success: change # default: change
-    on_failure: always # default: always
-  slack: travisci : test-channel-_-travis
+   slack: travisci : test-channel-_-travis
+#  email:
+#    recipients:
+#      - kmofokeng@deloitte.co.za
+#      - dbotha@deloitte.co.za
+#      - harbotha@deloitte.co.za
+#    on_success: change # default: change
+#    on_failure: always # default: always
+  
  
 # http://docs.travis-ci.com/user/deployment/openshift/ 
 # deploy: 
