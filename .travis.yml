@@ -15,6 +15,7 @@ notifications:
       - harbotha@deloitte.co.za
     on_success: change # default: change
     on_failure: always # default: always
+  slack: travisci : test-channel-_-travis
  
 # http://docs.travis-ci.com/user/deployment/openshift/ 
 # deploy: 
