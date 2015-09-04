@@ -1,17 +1,17 @@
 package com.datastax.cassandra;
 
-import com.datastax.driver.core.Cluster;
+//import com.datastax.driver.core.Cluster;
 
 import junit.framework.TestCase;
-import org.junit.Test;
+//import org.junit.Test;
 
-import static com.datastax.cassandra.Constants.*;
+//import static com.datastax.cassandra.Constants.*;
 
 /**
  * Created by kmofokeng on 19/08/2015.
  */
 public class CassandraConnectorTest extends TestCase {
-    private Cluster cluster;
+    /*private Cluster cluster;
 
     private CassandraConnector connector = new CassandraConnector();
 
@@ -33,18 +33,18 @@ public class CassandraConnectorTest extends TestCase {
         connector.close();
     }
 
-    /*@Test
+    @Test
     public void testDeleteSchema() {
         cluster = connector.connect(ADDRESS);
         connector.createSchema(KEYSPACE);
         assertTrue(connector.createSchema(DROPSCHEMA).getExecutionInfo().isSchemaInAgreement());
         connector.close();
-    }*/
+    }
 
     @Test
     public void testCloseConnection() {
         cluster = connector.connect(ADDRESS);
         connector.close();
         assertTrue(cluster.isClosed());
-    }
+    }*/
 }
