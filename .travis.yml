@@ -7,6 +7,12 @@ jdk:
 install: mvn install -Dmaven.compiler.target=1.6 -Dmaven.compiler.source=1.6 -DskipTests=true 
 script: mvn test -Dmaven.compiler.target=1.6 -Dmaven.compiler.source=1.6 
 
+notifications:
+  email:
+    recipients:
+      - kmofokeng@deloitte.co.za
+    on_success: [always|never|change] # default: change
+    on_failure: [always|never|change] # default: always
  
 # http://docs.travis-ci.com/user/deployment/openshift/ 
 # deploy: 
