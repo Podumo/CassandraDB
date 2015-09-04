@@ -11,8 +11,8 @@ notifications:
   email:
     recipients:
       - kmofokeng@deloitte.co.za
-    on_success: [always|never|change] # default: change
-    on_failure: [always|never|change] # default: always
+    on_success: change # default: change
+    on_failure: always # default: always
  
 # http://docs.travis-ci.com/user/deployment/openshift/ 
 # deploy: 
