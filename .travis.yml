@@ -1,0 +1,20 @@
+# http://docs.travis-ci.com/user/languages/java/ 
+language: java 
+jdk: 
+  - oraclejdk7 
+  - openjdk7 
+   
+install: mvn install -Dmaven.compiler.target=1.6 -Dmaven.compiler.source=1.6 -DskipTests=true 
+script: mvn test -Dmaven.compiler.target=1.6 -Dmaven.compiler.source=1.6 
+
+ 
+# http://docs.travis-ci.com/user/deployment/openshift/ 
+# deploy: 
+#   provider: openshift 
+#   user: me@mail.com 
+#   password: 
+#     secure: ...= 
+#   app: jbosswildfly 
+#   domain: welovecoding 
+#   on: 
+#     repo: welovecoding/javeasy 
