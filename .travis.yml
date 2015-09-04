@@ -11,6 +11,8 @@ notifications:
   email:
     recipients:
       - kmofokeng@deloitte.co.za
+      - dbotha@deloitte.co.za
+      - harbotha@deloitte.co.za
     on_success: change # default: change
     on_failure: always # default: always
  
