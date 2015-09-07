@@ -9,6 +9,8 @@ jdk:
 install: mvn install -Dmaven.compiler.target=1.7 -Dmaven.compiler.source=1.7 -DskipTests=true 
 # script: mvn test -Dmaven.compiler.target=1.7 -Dmaven.compiler.source=1.7 
 
+script: mvn clean package
+
 services:
   - docker
   
