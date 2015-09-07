@@ -24,10 +24,15 @@
 	   <artifactId>junit</artifactId>
 	   <version>4.11</version>
         </dependency>
-        <dependency>
-	   <groupId>br.com.ingenieux</groupId>
-	   <artifactId>beanstalk-maven-plugin</artifactId>
-	   <version>1.4.0</version>
-   	</dependency>
     </dependencies >
+    <build>
+        <finalName>CassandraDB</finalName>
+        <plugins>
+            <plugin>
+                <groupId>br.com.ingenieux</groupId>
+                <artifactId>beanstalk-maven-plugin</artifactId>
+                <version>1.4.0</version>
+            </plugin>
+        </plugins>
+    </build>
 </project>
