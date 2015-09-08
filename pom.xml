@@ -8,6 +8,11 @@
     <artifactId>simple-client</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <properties>
+     	<beanstalk.applicationName>bvb_core_accounts</beanstalk.applicationName>
+    	<beanstalker.region>us-west-1</beanstalker.region>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>com.datastax.cassandra</groupId>
