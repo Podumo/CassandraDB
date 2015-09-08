@@ -1,35 +1,4 @@
-# configure latest travis container environment
-sudo: false
-
 # http://docs.travis-ci.com/user/languages/java/ 
 language: java 
 jdk: 
   - oraclejdk8
-   
-install: mvn install -Dmaven.compiler.target=1.7 -Dmaven.compiler.source=1.7 -DskipTests=true -X
-script: mvn package beanstalk:fast-deploy
-
-services:
-  - docker
-  
-notifications:
-   slack: b-v-b:VRbCnXNcxpHy6ZcDUOClTfk8  
-   email:
-    recipients:
-      - kmofokeng@deloitte.co.za
-      - dbotha@deloitte.co.za
-      - harbotha@deloitte.co.za
-    on_success: change # default: change
-    on_failure: always # default: always
-  
- 
-# http://docs.travis-ci.com/user/deployment/openshift/ 
-# deploy: 
-#   provider: openshift 
-#   user: me@mail.com 
-#   password: 
-#     secure: ...= 
-#   app: jbosswildfly 
-#   domain: welovecoding 
-#   on: 
-#     repo: welovecoding/javeasy 
