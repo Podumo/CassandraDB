@@ -8,11 +8,6 @@
     <artifactId>simple-client</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <properties>
-     	<beanstalk.applicationName>bvb_core_accounts</beanstalk.applicationName>
-    	<beanstalker.region>us-west-1</beanstalker.region>
-    </properties>
-
     <dependencies>
         <dependency>
             <groupId>com.datastax.cassandra</groupId>
@@ -30,14 +25,5 @@
 	   <version>4.11</version>
         </dependency>
     </dependencies >
-    <build>
-        <finalName>CassandraDB</finalName>
-        <plugins>
-            <plugin>
-                <groupId>br.com.ingenieux</groupId>
-                <artifactId>beanstalk-maven-plugin</artifactId>
-                <version>1.4.0</version>
-            </plugin>
-        </plugins>
-    </build>
+    
 </project>
