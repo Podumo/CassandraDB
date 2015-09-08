@@ -5,19 +5,9 @@
            xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd"> 
   <servers> 
  	  <server> 
-   	  <id>bvbdev1app4-core-acct</id> 	  
-   	  <username>AKIAI7YS3VTUEQGJID3Q</username> 
- 	    <password>jKwVrsZT2faaDBpUbTy/hzsYbfxVnaBuDS0jmK6y</password> 
- 	  </server>    
- 	  <server> 
-   	  <id>bvbsit1app4-core-acct</id> 	  
-   	  <username>AKIAI7YS3VTUEQGJID3Q</username> 
- 	    <password>jKwVrsZT2faaDBpUbTy/hzsYbfxVnaBuDS0jmK6y</password> 
- 	  </server> 
- 	  <server> 
-   	  <id>bvbuat1app4-core-acct</id> 	  
-   	  <username>AKIAI7YS3VTUEQGJID3Q</username> 
- 	    <password>jKwVrsZT2faaDBpUbTy/hzsYbfxVnaBuDS0jmK6y</password> 
- 	  </server> 
+   	  <id></id> 	  
+   	  <username>username</username> 
+ 	    <password>********</password> 
+ 	  </server>
  	</servers>
 </settings>
