@@ -6,7 +6,7 @@ language: java
 jdk: 
   - oraclejdk8
    
-install: mvn install -Dmaven.compiler.target=1.7 -Dmaven.compiler.source=1.7 -DskipTests=true 
+install: mvn install -Dmaven.compiler.target=1.7 -Dmaven.compiler.source=1.7 -DskipTests=true -X
 script: mvn package beanstalk:fast-deploy
 
 services:
